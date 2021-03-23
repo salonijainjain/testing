@@ -1,25 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace TestingEx
 {
     class Program
     {
-        static void Main(string[] args)
+        public static List<Player> ListPlayers()
         {
-            List<OurSample> ListPlayers = new List<OurSample>
+            List<Player> ListPlayers = new List<Player>
             {
-                new OurSample{Pid=1,Pname="Virat Kohli",Pteam="India"},
-                 new OurSample{Pid=2,Pname="M.S.Dhoni",Pteam="India"}
+                new Player{Pid=1,Pname="Virat Kohli",Pteam="India"},
+                 new Player{Pid=2,Pname="M.S.Dhoni",Pteam="India"}
             };
-            Console.WriteLine("ID \t Name \t Team\t");
-            foreach(OurSample player in ListPlayers )
-            {
-                Console.WriteLine(player.Pid+"\t"+player.Pname+"\t"+player.Pteam);
-            }
+            return ListPlayers;
         }
-    }
+        static void Main(string[] args)
+        { }
+    } 
+    
 }

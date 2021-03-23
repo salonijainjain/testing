@@ -1,16 +1,16 @@
-﻿using NUnit.Framework;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace TestingEx
-{ [TestFixture]
-    public class OurSample
+{
+    class Player2
     {
-        [Test]
-        public void TestOne()
-        { 
         public int Pid { get; set; }
         public string Pname { get; set; }
         public string Pteam { get; set; }
-    }
-    }
-}
     
-
+}
+}
